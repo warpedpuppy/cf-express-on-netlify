@@ -16,12 +16,12 @@ If you have any questions about applying this, please make an appointment with y
 
 ![build image on netlify](https://walthermidcoast.s3.amazonaws.com/Screen+Shot+2022-12-03+at+3.13.24+PM.png)
 
-# In order to hit the routes you need to add **/.netlify/functions/server/** to the end of your api url!
+**In order to hit the routes you need to add "/.netlify/functions/server/" to the end of your api url!**
 
 I currently have this posted to netflify so if you want to try to hit some urls using postman:
 
  - https://imaginative-frangipane-fccf11.netlify.app/.netlify/functions/server/users
- 
+
  - https://imaginative-frangipane-fccf11.netlify.app/.netlify/functions/server/movies
 
 should both work
