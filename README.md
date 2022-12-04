@@ -20,5 +20,8 @@ If you have any questions about applying this, please make an appointment with y
 
 I currently have this posted to netflify so if you want to try to hit some urls using postman:
 
--https://imaginative-frangipane-fccf11.netlify.app/.netlify/functions/server/users
--https://imaginative-frangipane-fccf11.netlify.app/.netlify/functions/server/movies
+ - https://imaginative-frangipane-fccf11.netlify.app/.netlify/functions/server/users
+ 
+ - https://imaginative-frangipane-fccf11.netlify.app/.netlify/functions/server/movies
+
+should both work
