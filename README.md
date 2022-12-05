@@ -12,9 +12,9 @@ I used [this](https://github.com/neverendingqs/netlify-express/blob/master/serve
 
 If you have any questions about applying this, please make an appointment with your mentor.
 
-**import note:** when publishing to netlify be sure to delete the word "dist" so the build settings should look like:
+# click [here](https://www.loom.com/share/528e9fb968114735b53d09ab518e477e) to watch video showing you how to deploy this on Netlify
 
-![build image on netlify](https://walthermidcoast.s3.amazonaws.com/Screen+Shot+2022-12-03+at+3.13.24+PM.png)
+** np: don't forget to remove the word 'dist' from the deployment process **
 
 # important information below!
 
