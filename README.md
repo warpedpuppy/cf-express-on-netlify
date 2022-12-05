@@ -2,7 +2,7 @@
 
 I made this repo to help with CF students who are no longer able to post their movie apis to Heroku and would like to move them to Netlify.
 
-# click [here](https://www.loom.com/share/528e9fb968114735b53d09ab518e477e) to watch video showing you how to deploy this on Netlify
+## click [here](https://www.loom.com/share/528e9fb968114735b53d09ab518e477e) to watch video showing you how to deploy this on Netlify
 
 some important things: 
 - most of you currently have your routes in a file called "index.js" in the root.  you will find similar routes here inside express/server.js.
