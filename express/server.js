@@ -7,7 +7,6 @@ const { API_ROOT } = require('../config');
 const MOVIE_ROUTER = require('../movies/movie-router');
 const USERS_ROUTER = require('../users/users-router');
 
-
 app.use(`${API_ROOT}/movies`, MOVIE_ROUTER);  
 app.use(`${API_ROOT}/users`, USERS_ROUTER);  
 
