@@ -4,6 +4,8 @@ const app = express();
 app.use(express.json());
 const { API_ROOT } = require('../config');
 
+const knex = require('knex');
+
 const MOVIE_ROUTER = require('../movies/movie-router');
 const USERS_ROUTER = require('../users/users-router');
 
