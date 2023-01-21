@@ -19,3 +19,4 @@ exports.connect = async function() {
 
   return conn;
 };
+

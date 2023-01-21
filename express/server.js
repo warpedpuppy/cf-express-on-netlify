@@ -6,12 +6,12 @@ const { API_ROOT } = require('../config');
 
 
 
-async function con() {
-	const connect = require('./mongoose-connect');
-	let c = await connect.connect();
-	console.log(c);
-}
-con();
+// async function con() {
+// 	const connect = require('./mongoose-connect');
+// 	let c = await connect.connect();
+// 	// console.log(c);
+// }
+// con();
 
 // try {
 // 	const mongoose = require("mongoose");
