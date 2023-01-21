@@ -3,9 +3,13 @@ const serverless = require('serverless-http');
 const app = express();
 app.use(express.json());
 const { API_ROOT, CONNECTION_URI } = require('../config');
+try {
+	const mongoose = require("mongoose");
+	// mongoose.set('strictQuery', true);
+} catch (e) {
+	console.log('connection error ', e)
+}
 
-const mongoose = require("mongoose");
-mongoose.set('strictQuery', true);
 // mongoose.connect(CONNECTION_URI, {
 //   useNewUrlParser: true,
 //   useUnifiedTopology: true,
