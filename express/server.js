@@ -45,4 +45,10 @@ API_ROUTER
 app.use(API_ROOT, API_ROUTER);  
 
 module.exports = app;
-module.exports.handler = serverless(app);
+// module.exports.handler = serverless(app);
+
+const handler = serverless(app);
+module.exports.handler = async (event, context) => {
+  const result = await handler(event, context);
+  return result;
+};
