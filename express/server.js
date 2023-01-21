@@ -4,9 +4,15 @@ const app = express();
 app.use(express.json());
 const { API_ROOT } = require('../config');
 
-const connect = require('./mongoose-connect');
 
-console.log(connect.connect())
+
+async function con() {
+	const connect = require('./mongoose-connect');
+	let c = await connect.connect();
+	console.log(c);
+}
+con();
+
 // try {
 // 	const mongoose = require("mongoose");
 // 	mongoose.set('strictQuery', true);
