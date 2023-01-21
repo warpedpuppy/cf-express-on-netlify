@@ -4,8 +4,8 @@ const app = express();
 app.use(express.json());
 const { API_ROOT, CONNECTION_URI } = require('../config');
 
-// const mongoose = require("mongoose");
-// mongoose.set('strictQuery', true);
+const mongoose = require("mongoose");
+mongoose.set('strictQuery', true);
 // mongoose.connect(CONNECTION_URI, {
 //   useNewUrlParser: true,
 //   useUnifiedTopology: true,
