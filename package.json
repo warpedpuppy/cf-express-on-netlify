@@ -18,18 +18,12 @@
   "author": "warpedpuppy",
   "homepage": "https://github.com/warpedpuppy/cf-express-on-netlify",
   "dependencies": {
-    "@mongodb-js/zstd": "^1.0.0",
-    "aws4": "^1.12.0",
     "body-parser": "^1.19.0",
-    "bson-ext": "^4.0.3",
     "express": "^4.17.1",
-    "kerberos": "^2.0.1",
-    "mongodb-client-encryption": "^2.3.0",
     "mongoose": "^6.8.4",
     "netlify-lambda": "^1.6.3",
     "nodemon": "^1.19.2",
-    "serverless-http": "^2.3.0",
-    "snappy": "^7.2.2"
+    "serverless-http": "^2.3.0"
   },
   "devDependencies": {
     "body-parser": "^1.19.0",

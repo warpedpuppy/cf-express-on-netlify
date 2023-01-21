@@ -60,8 +60,6 @@ module.exports = app;
 
 const handler = serverless(app);
 module.exports.handler = async (event, context) => {
-	const connect = require('./mongoose-connect');
-	let c = await connect.connect();
   const result = await handler(event, context);
   return result;
 };
