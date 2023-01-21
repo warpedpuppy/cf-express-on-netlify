@@ -21,7 +21,7 @@ try {
 const API_ROUTER = express.Router();
 
 API_ROUTER
-.get('/movies', (req, res) => {
+.get('/movies', async (req, res) => {
 	res.send('movies get hit')
 })
 .post('/movies', (req, res) => {
