@@ -4,19 +4,16 @@ const app = express();
 app.use(express.json());
 const { API_ROOT, CONNECTION_URI } = require('../config');
 try {
-	const { MongoClient } = require("mongodb");
-	const mongoClient = new MongoClient(CONNECTION_URI);
-
+	const mongoose = require("mongoose");
+	mongoose.set('strictQuery', true);
+	mongoose.connect(CONNECTION_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+	.then( () => console.log('connected'))
+	.catch( e => console.error(e) );
 } catch (e) {
 	console.log('connection error ', e)
 }
 
-// mongoose.connect(CONNECTION_URI, {
-//   useNewUrlParser: true,
-//   useUnifiedTopology: true,
-// })
-// .then( () => console.log('connected'))
-// .catch( e => console.error(e) );
+
 
 
 const API_ROUTER = express.Router();
