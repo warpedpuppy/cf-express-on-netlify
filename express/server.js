@@ -55,7 +55,7 @@ API_ROUTER
 
 app.use(API_ROOT, API_ROUTER);  
 
-module.exports = app;
+// module.exports = app;
 // module.exports.handler = serverless(app);
 
 const handler = serverless(app);
