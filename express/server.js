@@ -21,30 +21,34 @@ try {
 const API_ROUTER = express.Router();
 
 API_ROUTER
-.get('/movies', async (req, res) => {
-	res.send('movies get hit')
+.get("/", async (request, response) => {
+	console.log("hey");
+	response.send({ hello: "world" });
 })
-.post('/movies', (req, res) => {
-	res.send('movies post hit')
-})
-.put('/movies', (req, res) => {
-	res.send('movies put hit')
-})
-.delete('/movies', (req, res) => {
-	res.send('movies delete hit')
-})
-.get('/users', (req, res) => {
-	res.send('user get hit')
-})
-.post('/users', (req, res) => {
-	res.send('user post hit')
-})
-.put('/users', (req, res) => {
-	res.send('user put hit')
-})
-.delete('/users', (req, res) => {
-	res.send('user delete hit')
-})
+// .get('/movies', async (req, res) => {
+// 	res.send('movies get hit')
+// })
+// .post('/movies', (req, res) => {
+// 	res.send('movies post hit')
+// })
+// .put('/movies', (req, res) => {
+// 	res.send('movies put hit')
+// })
+// .delete('/movies', (req, res) => {
+// 	res.send('movies delete hit')
+// })
+// .get('/users', (req, res) => {
+// 	res.send('user get hit')
+// })
+// .post('/users', (req, res) => {
+// 	res.send('user post hit')
+// })
+// .put('/users', (req, res) => {
+// 	res.send('user put hit')
+// })
+// .delete('/users', (req, res) => {
+// 	res.send('user delete hit')
+// })
 
 app.use(API_ROOT, API_ROUTER);  
 
