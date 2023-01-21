@@ -4,27 +4,6 @@ const app = express();
 app.use(express.json());
 const { API_ROOT } = require('../config');
 
-
-
-// async function con() {
-// 	const connect = require('./mongoose-connect');
-// 	let c = await connect.connect();
-// 	// console.log(c);
-// }
-// con();
-
-// try {
-// 	const mongoose = require("mongoose");
-// 	mongoose.set('strictQuery', true);
-// 	mongoose.connect(CONNECTION_URI, {
-// 		useNewUrlParser: true,
-// 		useUnifiedTopology: true,
-// 	})
-// 	.then( () => console.log('connected'))
-// 	.catch( e => console.error(e) );
-// } catch (e) {
-// 	console.log('connection error ', e)
-// }
 const API_ROUTER = express.Router();
 
 API_ROUTER
