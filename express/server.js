@@ -9,7 +9,7 @@ const API_ROUTER = express.Router();
 API_ROUTER
 .get('/movies', async (req, res) => {
 	let isConnected = await app.get('db');
-	res.send('movies get hit ' + isConnected + CONNECTION_URI);
+	res.send('movies get hit ' + isConnected);
 })
 .post('/movies', (req, res) => {
 	res.send('movies post hit')
