@@ -2,8 +2,8 @@ const express = require('express');
 const serverless = require('serverless-http');
 const app = express();
 app.use(express.json());
-const { API_ROOT, CONNECTION_URI } = require('../config');
-
+const { API_ROOT } = require('../config');
+let f = require('./mongoose-connect-2');
 const API_ROUTER = express.Router();
 
 API_ROUTER
