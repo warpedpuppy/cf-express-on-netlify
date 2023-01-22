@@ -27,7 +27,7 @@ async function c() {
 
 
 	const app = await require('./express/server');
-	if (conn) {app.set('db', "connected") } else { app.set('db', " not connected") };
+	if (conn) {app.set('db', "connected") } else { app.set('db', "not connected") };
 	const { LOCAL_PORT } = require('./config');
 
 	app.listen(LOCAL_PORT, () => console.log(`Local app listening on port ${LOCAL_PORT}!`));

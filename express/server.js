@@ -3,7 +3,7 @@ const serverless = require('serverless-http');
 const app = express();
 app.use(express.json());
 const { API_ROOT } = require('../config');
-let f = require('./mongoose-connect-2');
+
 const API_ROUTER = express.Router();
 
 API_ROUTER
@@ -40,6 +40,7 @@ module.exports = app;
 
 const handler = serverless(app);
 module.exports.handler = async (event, context) => {
+  let f = await require('./mongoose-connect-2');
   const result = await handler(event, context);
   return result;
 };
