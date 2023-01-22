@@ -2,14 +2,14 @@ const express = require('express');
 const serverless = require('serverless-http');
 const app = express();
 app.use(express.json());
-const { API_ROOT } = require('../config');
+const { API_ROOT, CONNECTION_URI } = require('../config');
 
 const API_ROUTER = express.Router();
 
 API_ROUTER
 .get('/movies', async (req, res) => {
-	let isConnected = await app.get('db')
-	res.send('movies get hit ' + isConnected)
+	let isConnected = await app.get('db');
+	res.send('movies get hit ' + isConnected + CONNECTION_URI);
 })
 .post('/movies', (req, res) => {
 	res.send('movies post hit')
