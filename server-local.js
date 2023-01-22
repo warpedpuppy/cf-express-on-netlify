@@ -24,7 +24,7 @@ async function c() {
 	useUnifiedTopology: true,
 	})
 
-
+	console.log("conn = ", conn)
 
 	const app = await require('./express/server');
 	if (conn) {app.set('db', "connected") } else { app.set('db', "not connected") };

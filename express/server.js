@@ -40,7 +40,7 @@ module.exports = app;
 
 const handler = serverless(app);
 module.exports.handler = async (event, context) => {
-//   let f = await require('./mongoose-connect-2');
+
   const result = await handler(event, context);
   return result;
 };
